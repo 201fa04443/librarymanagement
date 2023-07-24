@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+</head>
+<style>
+body{
+      bgcolor:powderblue;
+      background-image:url('bg.jpg');
+      background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+color:white ;
+}
+table{
+  border:solid 5px;
+ border-color:white;
+}
+</style>
+<script>
+function validate()
+{
+var a,b,c,d;
+a=document.studentregistration.susername.value;
+b=document.studentregistration.spassword.value;
+c=document.studentregistration.sreg.value;
+d=document.studentregistration.semail.value;
+if(a==""||b==""||c==""||d=="")
+{
+alert("Enter all details");
+}
+else
+{
+alert("Registered Succesfully");
+}
+}
+</script>
+<body>
+<form name="studentregistration" action="ram" method=" ">
+<pre>
+<table align="center">
+<tr>
+<td>
+       <h1 ><b>&nbsp;Student Registration<b></h1><br>
+Enter name:<input type="text" name="a" placeholder="Username" > <br><br>
+Password  :<input type="password" name="b" placeholder="Password" > <br><br>
+Reg.no    :<input type="text" name="c" placeholder="Registartion number" ><br><br>
+Email     :<input type="email" name="d" placeholder="Email" ><br><br>  
+        <input type="reset" value="Reset">     <input type="submit" value="submit" onclick=validate();>
+</td>
+</tr>
+</pre>
+</table>
+
+</form>
+
+</body>
+
+</html>
